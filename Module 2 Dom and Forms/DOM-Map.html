@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+
+    <ul id="t1">
+
+        <li id="l1">
+
+            Item 1
+
+        </li>
+
+    </ul>
+
+    <button onclick="javascript:displayNode();">Display DOM Node</button>
+
+    <script>
+
+        function displayNode(){
+           //var display = document.getElementById('l1').firstchild.nodeName;
+            //console.log( display );
+            var list = document.getElementById('t1');
+            var newitem = document.createElement('li');
+            var newtext = document.createTextNode("Item 2");
+            list.appendChild(newitem);
+            newitem.appendChild(newtext);
+            }
+
+    </script>
+
+</body>
+
+</html>
