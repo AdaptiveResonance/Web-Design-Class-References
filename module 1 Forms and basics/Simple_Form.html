@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <!--"this is a table for formatting"-->
+    <style>
+        
+        label {
+            display: inline-block;
+            display: 100px;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+        <header>   
+            <h2>HTTP Request - Response</h2>
+            <nav>
+                <a href="./First.html?page_num=2?dark_mode=on">First_HTML</a> 
+            <nav>
+        <header>
+
+            <main>
+                <h3>contact form<
+                <form method="POST" action="https://sait-demo.000webhostapp.com/results.php?page=4&darkmode=on">
+
+                    
+                    <label>Username:</label>
+        
+                    <input type="text" name="username" value="">
+        
+                    <br>
+        
+                    <label>Password:</label>
+        
+                    <input type="password" name="password" value="">
+        
+                    <br>
+        
+                    <label>E-mail:</label>
+        
+                    <input type="email" name="user_mail" value="">
+                    <!--value"" to leave it empty-->
+                    <br>
+        
+                    <h4>Availability</h4>
+        
+        
+        
+                    <input type="checkbox" name="availability[]" value="Monday"><label>Monday</label><br>
+                    <!--[] declares is a group, like an array-->
+                    <input type="checkbox" name="availability[]" value="Tuesday"><label>Tuesday</label><br>
+        
+                    <input type="checkbox" name="availability[]" value="Wednesday"><label>Wednesday</label><br>
+        
+                    <input type="checkbox" name="availability[]" value="Thursday"><label>Thursday</label><br>
+        
+                    <input type="checkbox" name="availability[]" value="Friday"><label>Friday</label><br>
+        
+        
+        
+                    <h4>Comments</h4>
+        
+                    <textarea name="comments" cols="30" rows="10">This is the value of the text area</textarea>
+        
+        
+        
+        
+                    <br>
+        
+                    <input type="submit" value="Submit Form">
+        
+        
+        
+                </form>
+
+                
+</body>
+</html>
